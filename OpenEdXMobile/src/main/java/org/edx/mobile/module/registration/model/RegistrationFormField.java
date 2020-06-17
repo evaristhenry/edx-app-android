@@ -55,6 +55,11 @@ public class RegistrationFormField {
         return fieldType != null ? fieldType : RegistrationFieldType.UNKNOWN;
     }
 
+    // just for check purpose due to bogus data will remove once backend side PR will be merged
+    public void setFieldType(@NonNull RegistrationFieldType fieldType){
+        this.fieldType = fieldType;
+    }
+
     public String getLabel() {
         return label;
     }

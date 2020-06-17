@@ -57,6 +57,10 @@ public interface IRegistrationFieldView {
                 View view = inflater.inflate(R.layout.view_register_edit_text, null);
                 return new RegistrationEmailView(field, view);
             }
+            else if (fieldType.equals(RegistrationFieldType.CONFIRM_EMAIL)) {
+                View view = inflater.inflate(R.layout.view_register_edit_text, null);
+                return new RegistrationEmailView(field, view);
+            }
             else if (fieldType.equals(RegistrationFieldType.PASSWORD)) {
                 View view = inflater.inflate(R.layout.view_register_edit_text, null);
                 return new RegistrationPasswordView(field, view);
